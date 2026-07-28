@@ -65,7 +65,7 @@ def search_posts(client, keyword):
                 likes = tweet.public_metrics.get('like_count', 0)
                 
                 # 表示数1万以上、または50いいね以上のみを対象
-                if impressions >= 10000 or likes >= 50:
+                if impressions >= 500 or likes >= 20:
                     posts.append({
                         'id': tweet.id,
                         'text': tweet.text,
