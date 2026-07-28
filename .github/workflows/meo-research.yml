@@ -1,5 +1,8 @@
 name: MEO Research Automation
 
+permissions:
+  contents: write
+  
 on:
   schedule:
     # 毎朝 8時（UTC）に実行
