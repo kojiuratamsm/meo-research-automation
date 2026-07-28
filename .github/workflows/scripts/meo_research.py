@@ -64,7 +64,7 @@ def search_posts(client, keyword):
                 impressions = tweet.public_metrics.get('impression_count', 0)
                 likes = tweet.public_metrics.get('like_count', 0)
                 
-                # 表示数1万以上、または50いいね以上のみを対象
+                # 表示数500以上、または20いいね以上のみを対象
                 if impressions >= 500 or likes >= 20:
                     posts.append({
                         'id': tweet.id,
